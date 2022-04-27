@@ -1,4 +1,4 @@
-# terraform-linode-instance
+# terraform-module-linode-network
 
 A simple Terraform module for creating instances in Linode.
 
