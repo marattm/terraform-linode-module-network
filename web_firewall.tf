@@ -1,7 +1,7 @@
 
 resource "linode_firewall" "web_firewall" {
-  label = "web_firewall"
-  tags  = ["test"]
+  label = "${var.SITE}-web-firewall-${var.ENV}"
+  tags  = ["${var.ENV}", "web_firewall"]
 
   inbound {
     label    = "allow-http"

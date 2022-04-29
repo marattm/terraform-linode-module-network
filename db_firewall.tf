@@ -1,7 +1,7 @@
 
 resource "linode_firewall" "db_firewall" {
-  label = "db_firewall"
-  tags  = ["test"]
+  label = "${var.SITE}-db-firewall-${var.ENV}"
+  tags  = ["${var.ENV}", "db_firewall"]
 
   inbound {
     label    = "allow-http"
